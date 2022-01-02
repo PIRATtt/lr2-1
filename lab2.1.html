@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="lab2.css">
+</head>
+<body class="body">
+    <header class="header"><h1>Форма обратно связи</h1></header>
+    <main>
+        <form action="" method="post">
+            <p><b>ФИО</b></p>
+            <input type="text" size=30 placeholder="Иванов Иван Иванович">
+            <div class="pol">
+                <p><b>Укажите ВАШ пол:</b></p>
+                <input type="radio" value="Мужской">Мужской<br>
+                <input type="radio" value="Женский">Женский<br>
+            </div>
+            <p><b>Электронная почта</b></p>
+            <input type="email" size=30 placeholder="your@yandex.ru">
+            <p><b>Категория обращения</b></p>
+            <select name="select">
+                <option>Жалоба</option>
+                <option>Не жалоба)))</option>
+            </select>
+            <p><b>Текст сообщения</b></p>
+            <p><textarea rows="10" cols="45" name="text" placeholder="Текст"></textarea></p>
+            <p><b>Вложения</b></p>
+            <div class="ffile">
+                <button onclick="document.getElementById('getFile').click()">Выберите файл</button>
+                <p>  Файл не выбран</p>
+                <input type='file' id="getFile" style="display:none">
+            </div>
+        </form>
+    </main>
+</body>
