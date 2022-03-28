@@ -8,7 +8,7 @@
 <body class="body">
     <header class="header"><h1>Форма обратно связи</h1></header>
     <main>
-        <form enctype="https://httpbin.org/post" method="post">
+        <form name="post" enctype="multipart/form-data" method="post">
             <p><b>ФИО</b></p>
             <input type="text" size=30 placeholder="Иванов Иван Иванович">
             <div class="pol">
@@ -27,7 +27,7 @@
             <p><textarea rows="10" cols="45" name="text" placeholder="Текст"></textarea></p>
             <p><b>Вложения</b></p>
             <div class="ffile">
-                <form enctype="https://httpbin.org/post" method="post">
+                <form name="file" enctype="multipart/form-data" method="post">
                     <p><input type="file" name="f"></p>
                 </form> 
             </div>
